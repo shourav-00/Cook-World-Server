@@ -778,7 +778,7 @@ async function run() {
       res.send(result);
     });
 
-    // PATCH endpoint for approving/rejecting chef requests
+
     app.patch("/chefs/:id", verifyFBToken, verifyAdmin, async (req, res) => {
       try {
         const id = req.params.id;
