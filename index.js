@@ -794,7 +794,7 @@ async function run() {
 
         const result = await chefsCollection.updateOne(filter, updateDoc);
 
-        // If approved, update user role
+ 
         if (status === "approved") {
           const request = await chefsCollection.findOne(filter);
 
