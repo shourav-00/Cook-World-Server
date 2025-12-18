@@ -667,7 +667,7 @@ async function run() {
 
           const filter = { _id: new ObjectId(orderId) };
 
-          // Verify order is accepted by chef before processing payment
+          
           const order = await orderCollection.findOne(filter);
           if (!order) {
             return res
