@@ -737,8 +737,7 @@ async function run() {
         // if (email !== req.decoded_email) {
         //   return res
         //     .status(403)
-        //     .send({ error: 1, message: "forbidden access" });
-        // }
+            //  .send({ error: 1, message: "forbidffffffffff
       }
 
       const options = {
