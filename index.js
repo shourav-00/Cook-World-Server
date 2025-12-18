@@ -747,7 +747,7 @@ async function run() {
       res.send(result);
     });
 
-    //chef and admin role base api
+  
     app.post("/chefs", async (req, res) => {
       const chef = req.body;
       chef.status = "pending";
