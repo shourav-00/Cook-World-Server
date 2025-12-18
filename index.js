@@ -803,8 +803,6 @@ async function run() {
             const userUpdate = {
               $set: {},
             };
-
-            // If request type is chef, generate ChefId and set role
             if (request.requestType === "chef") {
               const chefId = `chef-${Math.floor(1000 + Math.random() * 9000)}`;
               userUpdate.$set.role = "chef";
