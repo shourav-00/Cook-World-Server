@@ -618,8 +618,8 @@ async function run() {
             userName: paymentInfo.userName,
             userEmail: paymentInfo.userEmail,
           },
-          success_url: `${process.env.SITE_DOMAIN}/dashboard/payment-success?session_id={CHECKOUT_SESSION_ID}`,
-          cancel_url: `${process.env.SITE_DOMAIN}/dashboard/payment-cancled`,
+          success_url: `${process.env.SITE_DOMAIN}/dashboard`,
+          cancel_url: `${process.env.SITE_DOMAIN}/dashboard`,
         });
 
         res.send({ url: session.url });
@@ -828,11 +828,7 @@ async function run() {
       }
     });
 
-    // Send a ping to confirm a successful connection
-    // await client.db("admin").command({ ping: 1 });
-    // console.log(
-    //   "Pinged your deployment. You successfully connected to MongoDB!"
-    // );
+   
   } finally {
   }
 }
