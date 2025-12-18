@@ -757,7 +757,7 @@ async function run() {
       res.send(result);
     });
 
-    //chef and admin get api
+    
 
     app.get("/chefs", verifyFBToken, async (req, res) => {
       const { status, workStatus } = req.query;
