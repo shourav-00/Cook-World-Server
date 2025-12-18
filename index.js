@@ -784,7 +784,7 @@ async function run() {
         const id = req.params.id;
         const { status, email } = req.body;
 
-        // Update the request status in chefs collection
+    
         const filter = { _id: new ObjectId(id) };
         const updateDoc = {
           $set: {
@@ -808,7 +808,7 @@ async function run() {
               userUpdate.$set.role = "chef";
               userUpdate.$set.chefId = chefId;
             }
-            // If request type is admin, set role to admin
+           
             else if (request.requestType === "admin") {
               userUpdate.$set.role = "admin";
             }
