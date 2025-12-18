@@ -736,8 +736,7 @@ async function run() {
         query.userEmail = email;
         // if (email !== req.decoded_email) {
         //   return res
-        //     .status(403)
-            //  .send({ error: 1, message: "forbidffffffffff
+        //     .
       }
 
       const options = {
